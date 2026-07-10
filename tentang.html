@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>TENTANG PERSIT - KORAMIL 08 SECANGGANG</title>
+	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+	<style>
+	body{
+		background: #A9BA9D;
+		font-family: 'Segoe UI', Tahoma, sans-serif;
+	}
+
+	.banner-berjalan {
+		background: #383f2b;
+		color: #eff8df;
+		padding: 10px 0;
+		overflow: hidden;
+		font-size: 18px;
+		font-weight: 600;
+		margin: 0; 
+	}
+
+	.banner-berjalan span {
+		display: inline-block;
+	white-space: nowrap;
+		padding-left: 100%;
+		animation: jalan 25s linear infinite;
+	}
+
+	@keyframes jalan {
+	0%   { transform: translateX(0); }
+	100% { transform: translateX(-100%); }
+	}
+
+	.navbar{
+		background-color: #293317;
+		border: none;
+		border-radius: 0;
+		margin-bottom: 0;
+	}
+	
+	.navbar-inverse .navbar-nav > li > a {
+		color: #fff;
+		font-weight: 500;
+	}
+	
+	.navbar-brand {
+		padding: 5px 15px;
+	}
+	.navbar-brand img {
+		height: 80px;
+		margin-top: -5px;
+	}
+
+
+
+	.logo-tengah {
+			text-align: center;
+			margin: 40px 0;
+	}
+	.logo-tengah img {
+			max-width: 500px;
+			width: 100%;
+			height: auto;
+	}
+	.box-sejarah {
+			background: white;
+			padding: 30px;
+			border-radius: 10px;
+			box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+			margin-bottom: 30px;
+	}
+	.box-sejarah h3 {
+			color: #293317;
+			font-weight: 700;
+			margin-bottom: 20px;
+			border-bottom: 3px solid #FFD700;
+			padding-bottom: 10px;
+			display: inline-block;
+	}
+	.box-sejarah p, .box-sejarah {
+			font-size: 16px;
+			line-height: 1.8;
+			text-align: justify;
+			color: #333;
+			margin-bottom: 15px;
+	}
+	.foto-persit {
+			margin-bottom: 50px;
+			text-align: center;
+	}
+	.foto-persit img {
+			width: 100%;
+			max-width: 400px;
+			border-radius: 12px;
+			box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+			border: 5px solid white;
+	}
+
+	
+	.footer-pro {
+		background: #293317;
+		color: white;
+		padding: 50px 0 20px 0;
+		margin-top: 60px;
+	}
+	.footer-quote {
+		font-size: 15px;
+		font-style: italic;
+		line-height: 1.8;
+		color: #e5e7eb;
+		max-width: 800px;
+		margin: 0 auto 40px auto;
+		padding: 0 15px;
+		text-align: center;
+	}
+	.footer-pro h4 {
+		text-align: center !important;
+		margin-bottom: 20px;
+		font-weight: 600;
+	}
+	.footer-kontak {
+		list-style: none;
+		padding: 0;
+		margin: 0 0 20px 0;
+		color: #d1d5db;
+		font-size: 14px;
+		text-align: center !important;
+	}
+	.sosmed a {
+		display: inline-block;
+		width: 35px;
+		height: 35px;
+		background: rgba(255,255,255,0.1);
+		color: white;
+		text-align: center;
+		line-height: 35px;
+		border-radius: 50%;
+		margin: 0 5px;
+		transition: 0.3s;
+		text-decoration: none;
+		font-weight: 700;
+	}
+	
+	.footer-copyright {
+		font-size: 12px;
+		color: #9ca3af;
+		margin-top: 30px;
+		text-align: center;
+		border-top: 1px solid #444;
+		padding-top: 20px;
+	}
+	
+	@media (max-width: 768px) {
+	.box-sejarah {
+		padding: 25px;
+	}
+	.foto-persit {
+		margin-bottom: 30px;
+	}
+	.banner-ticker {
+		font-size: 15px;
+	}
+	.navbar-brand img {
+		height: 80px;
+		margin-top: -5px;
+	}
+	.navbar-nav > li > a{ padding-top: 15px; padding-bottom: 15px; }
+	}
+
+	
+	.navbar{ position: relative; z-index: 9999; }
+	.navbar-toggle{ position: relative; z-index: 10000; }
+	
+	</style>
+</head>
+<body>
+	
+	<nav class="navbar navbar-inverse">
+	<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">Toggle Nav</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="websitekoramil.html"><img src="images/logo1.PNG" alt="logo koramil"></a>
+			</div>
+			
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+					<li><a href="index.html">HOME</a></li>
+					<li><a href="profil.html">PROFIL</a></li>
+					<li><a href="kegiatan.html">KEGIATAN</a></li>
+					<li><a href="informasi.html">INFORMASI</a></li>
+					<li class="dropdown active"> 
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">PERSIT <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li class="active"><a href="tentang.html">Tentang Persit<span class="sr-only">(current)</span></a></li> <!-- ACTIVE PINDAH KE SINI -->
+							<li><a href="galeri.html">Galeri Persit</a></li>
+						</ul>
+					</li>
+					<li><a href="kontak.html">ALAMAT</a></li>
+				</ul>
+			</div>
+	</div>
+	</nav>
+
+	
+	<div class="banner-berjalan">
+	<span>TENTANG PERSIT KARTIKA CHANDRA KIRANA RANTING 09 KORAMIL 08  SECANGGANG - SETIA, BERBAKTI, BERPRESTASI</span>
+	</div>
+
+	<div class="container" style="margin-bottom: 50px;">
+	
+	<div class="row">
+			<div class="col-md-12 logo-tengah">
+				<img src="images/logo persit.webp" alt="Logo Persit Kartika Chandra Kirana" class="img-responsive center-block">
+			</div>
+	</div>
+		
+	
+	<div class="row">
+			<div class="col-md-5">
+				<div class="foto-persit">
+					<img src="images/ibupersit.jpeg" alt="Kegiatan Persit Kartika Chandra Kirana" class="img-responsive center-block">
+					<p style="margin-top: 10px; font-size: 14px; color: #555; font-style: italic;">Persit Kartika Chandra Kirana Ranting 09 KORAMIL 08/Secanggang</p>
+				</div>
+			</div>
+			
+			<div class="col-md-7">
+				<div class="box-sejarah">
+					<h3>Sejarah Persit Kartika Chandra Kirana</h3>
+					<p>Persit Kartika Chandra Kirana adalah organisasi istri prajurit TNI AD yang didirikan pada tanggal 24 Oktober 1950. 
+					Organisasi ini bertujuan untuk mendukung dan memperkuat peran istri prajurit dalam kehidupan keluarga, 
+					sosial, dan kemasyarakatan. Persit Kartika Chandra Kirana memiliki berbagai kegiatan sosial, 
+					pendidikan, dan budaya yang bertujuan untuk meningkatkan kesejahteraan anggota dan masyarakat sekitar.</p>
+					<p>Organisasi ini juga aktif dalam berbagai kegiatan sosial, seperti bakti sosial, 
+					penggalangan dana untuk korban bencana, dan program-program kesejahteraan masyarakat.
+					Persit Kartika Chandra Kirana memiliki peran penting dalam mendukung prajurit TNI AD dan 
+					keluarga mereka, serta berkontribusi pada pembangunan masyarakat.</p>
+					<p>Dengan sejarah yang panjang dan kontribusi yang signifikan, 
+					Persit Kartika Chandra Kirana terus menjadi organisasi yang relevan dan berperan penting 
+					dalam kehidupan prajurit TNI AD dan masyarakat Indonesia.</p>
+				</div>
+			</div>
+	</div>
+	</div>	
+
+	
+	<footer class="footer-pro">
+	<div class="container">
+		
+	<div class="row">
+			<div class="col-md-12">
+				<p class="footer-quote">
+					Website 08/Secanggang merupakan media informasi dan komunikasi publik yang bertujuan untuk
+			menyampaikan berbagai kegiatan, program kerja, serta informasi terkait pembinaan teritorial 
+			yang dilaksanakan oleh Koramil 08/Secanggang. Website ini diharapkan dapat menjadi sarana yang efektif
+			dalam mempererat hubungan antara TNI dengan masyarakat serta mendukung terwujudnya kemanunggalan TNI dan rakyat.
+				</p>
+			</div>
+	</div>
+
+	<div class="row">
+			<div class="col-md-6 col-sm-12 text-center">
+				<h4>Jam Pelayanan</h4>
+				<ul class="footer-kontak">
+					<li>📅 Senin - Jumat : 07.00 - 16.00 WIB</li><br>
+					<li>📅 Sabtu - Minggu & Hari Libur : Tutup</li>
+				</ul>
+			</div>
+
+			<div class="col-md-6 col-sm-12 text-center">
+				<h4>Hubungi Kami</h4>
+				<ul class="footer-kontak">
+					<li>📍 Jl. cinta raja,kec. Secanggang,Kabupaten Langkat</li>
+				</ul>
+				
+				<div class="sosmed">
+					<a href="https://www.facebook.com/share/191nqkvG29/?mibextid=wwXIfr" title="Facebook">f</a>
+					<a href="https://www.instagram.com/koramil_08secanggang?igsh=MTI4a2RkOGtsYmczcA==" title="Instagram">📷</a>
+				
+				</div>
+			</div>
+	</div>
+
+	<div class="row">
+			<div class="col-md-12">
+				<p class="footer-copyright">© BY FARIZA AZMI. Dibuat Untuk Memenuhi Tugas Mata Kuliah Pemrograman Web 1. Institut Teknologi dan Bisnis Indonesia.</p>
+			</div>
+	</div>
+
+	</div>
+	</footer>
+
+
+<script src="bootstrap/js/jQuery.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>

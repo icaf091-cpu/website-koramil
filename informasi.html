@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>INFORMASI - KORAMIL 08 SECANGGANG</title>
+	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	
+	<style>
+	body{
+		background: #A9BA9D;
+		font-family: 'Segoe UI', Tahoma, sans-serif;
+	}
+
+	.banner-berjalan {
+		background: #383f2b;
+		color: #eff8df;
+		padding: 10px 0;
+		overflow: hidden;
+		font-size: 18px;
+		font-weight: 600;
+		margin: 0; 
+	}
+
+	.banner-berjalan span {
+		display: inline-block;
+	white-space: nowrap;
+		padding-left: 100%;
+		animation: jalan 25s linear infinite;
+	}
+
+	@keyframes jalan {
+	0%   { transform: translateX(0); }
+	100% { transform: translateX(-100%); }
+	}
+
+	.navbar{
+		background-color: #293317;
+		border: none;
+		border-radius: 0;
+		margin-bottom: 0;
+	}
+	
+	.navbar-inverse .navbar-nav > li > a {
+		color: #fff;
+		font-weight: 500;
+	}
+	
+	.navbar-brand {
+		padding: 5px 15px;
+	}
+	.navbar-brand img {
+		height: 80px;
+		margin-top: -5px;
+	}
+
+
+	.judul-halaman {
+		color: #293317;
+		font-weight: 700;
+		text-align: center;
+		margin: 40px 0;
+		font-size: 32px;
+	}
+	.box-info {
+		background: white;
+		border-radius: 12px;
+		padding: 30px;
+		box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+		margin-bottom: 25px;
+		border-left: 6px solid #293317;
+	}
+	.box-info.penting {
+		border-left-color: #d9534f; 
+		background: #fff9f9;
+	}
+	.box-info h4 {
+		color: #293317;
+		font-weight: 700;
+		margin-top: 0;
+		margin-bottom: 10px;
+	}
+	.badge-info, .badge-penting {
+		padding: 5px 10px;
+		font-size: 12px;
+		border-radius: 4px;
+		color: white;
+	}
+	.badge-info { background-color: #293317; }
+	.badge-penting { background-color: #d9534f; }
+	.box-info .meta {
+		font-size: 13px;
+		color: #777;
+		margin-bottom: 12px;
+	}
+	.box-info .meta span {
+		margin-right: 15px;
+	}
+
+
+	.footer-pro {
+		background: #293317;
+		color: white;
+		padding: 50px 0 20px 0;
+		margin-top: 60px;
+		text-align: center;
+	}
+	.footer-quote {
+		font-style: italic;
+		color: #e5e7eb;
+		max-width: 800px;
+		margin: 0 auto 40px auto;
+		line-height: 1.8;
+	}
+	.footer-pro h4 {
+		text-align: center !important;
+		margin-bottom: 20px;
+		font-weight: 600;
+	}
+	.footer-kontak {
+		list-style: none;
+		padding: 0;
+		color: #d1d5db;
+		font-size: 14px;
+		text-align: center !important;
+	}
+	.sosmed a {
+		display: inline-block;
+		width: 35px;
+		height: 35px;
+		background: rgba(255,255,255,0.1);
+		color: white;
+		line-height: 35px;
+		border-radius: 50%;
+		margin: 0 5px;
+		text-decoration: none;
+		font-weight: 700;
+	}
+	
+	.footer-copyright {
+		font-size: 12px;
+		color: #9ca3af;
+		margin-top: 30px;
+		text-align: center;
+		border-top: 1px solid #444;
+		padding-top: 20px;
+	}
+
+	
+	@media (max-width: 768px) {
+		.navbar-brand img {
+		height: 80px;
+		margin-top: -5px;
+	}
+	.banner-ticker { font-size: 15px; }
+	.judul-halaman { font-size: 24px; }
+	.box-info { padding: 20px; }
+	.navbar-brand img { height: 45px; }
+	.navbar-nav > li > a{ padding-top: 15px; padding-bottom: 15px; }
+	}
+	</style>
+</head>
+<body>
+
+	
+	<nav class="navbar navbar-inverse">
+	<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="websitekoramil.html"><img src="images/logo1.PNG" alt="logo koramil"></a>
+			</div>
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+					<li><a href="index.html">HOME</a></li>
+					<li><a href="profil.html">PROFIL</a></li>
+					<li><a href="kegiatan.html">KEGIATAN</a></li>
+					<li class="active"><a href="informasi.html">INFORMASI <span class="sr-only">(current)</span></a></li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">PERSIT <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="tentang.html">Tentang Persit</a></li>
+							<li><a href="galeri.html">Galeri Persit</a></li>
+						</ul>
+					</li>
+					<li><a href="kontak.html">ALAMAT</a></li>
+				</ul>
+			</div>
+	</div>
+	</nav>
+
+	
+	<div class="banner-berjalan">
+	<span>INFORMASI & PENGUMUMAN TERBARU DARI KORAMIL 08/SECANGGANG</span>
+	</div>
+
+
+	<div class="container" style="margin-bottom: 50px;">
+	<h2 class="judul-halaman">INFORMASI & PENGUMUMAN</h2>
+
+	<div class="box-info penting">
+			<h4><span class="badge badge-penting">INFO</span> Renacana kegiatan karya bakti</h4>
+			<div class="meta"><span>📅 15 februari 2026</span> <span>👤 aparat desa beserta anggota koramil</span></div>
+			<p>aparat desa beserta anggota koramil bermusyawarah terkait mengenai gotong royong  yang akan dilaksanakan pada tanggal 15 februari 2026 didesa binaan masing-masing.</p>
+	</div>
+
+	<div class="box-info">
+			<h4><span class="badge badge-info">INFO</span> Monitoring Wilayah Binaan</h4>
+			<div class="meta"><span>📅 5 maret 2026</span> <span>👤 Babinsa</span></div>
+			<p>Babinsa melaksanakan monitoring wilayah binaan untuk mengetahui perkembangan situasi dan mempererat hubungan dengan masyarakat melalui komunikasi sosial.</p>
+	</div>
+		
+	<div class="box-info">
+			<h4><span class="badge badge-info">INFO</span> Melaksanakan patroli malam</h4>
+			<div class="meta"><span>kegiatan rutin </span> <span>👤 Aparat desa beserta babinsa</span></div>
+			<p>Babinsa koramil ngecek kegiatan  ronda malam yang di di wilayah binaan untuk menjaga keamanan dan ketertiban masyarakat serta mencegah terjadinya gangguan keamanan.</p>
+	</div>
+
+	<div class="box-info">
+			<h4><span class="badge badge-info">INFO</span> Mengawasi kegiatan kdmp</h4>
+			<div class="meta"><span>📅 01 Januari 2026</span> <span>👤 Pemerintah Pusat</span></div>
+			<p>Anggota koramil mengawasi kegiatan kdmp yang diadakan oleh pemerintah didesa binaan untuk memastikan kelancaran dan percepatan pembangunan.</p>
+	</div>
+
+	
+	<footer class="footer-pro">
+	<div class="container">
+		
+	<div class="row">
+			<div class="col-md-12">
+				<p class="footer-quote">
+					Website 08/Secanggang merupakan media informasi dan komunikasi publik yang bertujuan untuk
+			menyampaikan berbagai kegiatan, program kerja, serta informasi terkait pembinaan teritorial 
+			yang dilaksanakan oleh Koramil 08/Secanggang. Website ini diharapkan dapat menjadi sarana yang efektif
+			dalam mempererat hubungan antara TNI dengan masyarakat serta mendukung terwujudnya kemanunggalan TNI dan rakyat.
+				</p>
+			</div>
+	</div>
+
+	<div class="row">
+			<div class="col-md-6 col-sm-12 text-center">
+				<h4>Jam Pelayanan</h4>
+				<ul class="footer-kontak">
+					<li>📅 Senin - Jumat : 07.00 - 16.00 WIB</li><br>
+					<li>📅 Sabtu - Minggu & Hari Libur : Tutup</li>
+				</ul>
+			</div>
+
+			<div class="col-md-6 col-sm-12 text-center">
+				<h4>Hubungi Kami</h4>
+				<ul class="footer-kontak">
+					<li>📍 Jl. cinta raja,kec. Secanggang,Kabupaten Langkat</li>
+				</ul>
+				
+				<div class="sosmed">
+					<a href="https://www.facebook.com/share/191nqkvG29/?mibextid=wwXIfr" title="Facebook">f</a>
+					<a href="https://www.instagram.com/koramil_08secanggang?igsh=MTI4a2RkOGtsYmczcA==" title="Instagram">📷</a>
+					
+				</div>
+			</div>
+	</div>
+
+	<div class="row">
+			<div class="col-md-12">
+				<p class="footer-copyright">© BY FARIZA AZMI. Dibuat Untuk Memenuhi Tugas Mata Kuliah Pemrograman Web 1. Institut Teknologi dan Bisnis Indonesia.</p>
+			</div>
+	</div>
+
+	</div>
+	</footer>
+
+<script src="bootstrap/js/jQuery.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
