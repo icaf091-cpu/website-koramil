@@ -24,7 +24,7 @@
 
 	.banner-berjalan span {
 		display: inline-block;
-	white-space: nowrap;
+		white-space: nowrap;
 		padding-left: 100%;
 		animation: jalan 25s linear infinite;
 	}
@@ -54,9 +54,6 @@
 		margin-top: -5px;
 	}
 
-	
-	
-
 	.judul-halaman {
 		color: #293317;
 		font-weight: 700;
@@ -80,7 +77,8 @@
 		background: #293317;
 		color: white;
 		padding: 50px 0 20px 0;
-		margin-top: 60px;
+		margin: 60px 0 0 0; /* margin kiri kanan 0 */
+		width: 100%; /* biar full */
 	}
 
 	.footer-quote {
@@ -134,19 +132,18 @@
 	}
 
 	@media (max-width: 768px) {
-		.navbar-brand img {
+	.navbar-brand img {
 		height: 80px;
 		margin-top: -5px;
 	}
 	.box-kegiatan { text-align: center; } 
 	.box-kegiatan img{margin-bottom:15px;}
-	.banner-ticker { font-size: 15px; }
-	.navbar-nav > li > a{ padding-top: 15px; padding-bottom: 15px; } /* MENU HP GA DEMPET */
+	.banner-berjalan { font-size: 15px; }
+	.navbar-nav > li > a{ padding-top: 15px; padding-bottom: 15px; }
 	}
 	</style>
 </head>
 <body>
-
 
 	<nav class="navbar navbar-inverse">
 	<div class="container">
@@ -166,8 +163,6 @@
 				<li><a href="profil.html">PROFIL</a></li>
 				<li class="active"><a href="kegiatan.html">KEGIATAN <span class="sr-only">(current)</span></a></li>
 				<li><a href="informasi.html">INFORMASI</a></li>
-				
-			
 				<li class="dropdown">
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">PERSIT <span class="caret"></span></a>
 					<ul class="dropdown-menu">
@@ -175,13 +170,11 @@
 						<li><a href="galeri.html">Galeri Persit</a></li>
 					</ul>
 				</li>
-				
 				<li><a href="kontak.html">ALAMAT</a></li>
 			</ul>
 	</div>
 	</div>
 	</nav>
-
 
 	<div class="banner-berjalan"><span>DOKUMENTASI KEGIATAN KORAMIL 08/SECANGGANG - TANGGUH, PROFESIONAL, DICINTAI RAKYAT</span></div>
 
@@ -193,7 +186,8 @@
 				<div class="col-md-4"><img src="images/apel pagi.jpeg" alt="apel pagi"></div>
 				<div class="col-md-8">
 					<h4>Apel Pagi</h4>
-					<p>Apel pagi Koramil 08/Secanggang sebagai wujud disiplin, kesiapsiagaan, dan tanggung jawab personel dalam melaksanakan tugas serta pengabdian kepada masyarakat..</p>
+					<p>Apel pagi Koramil 08/Secanggang sebagai wujud disiplin, kesiapsiagaan, dan tanggung jawab personel dalam melaksanakan tugas serta pengabdian kepada masyarakat.</p>
+				</div>
 			</div>
 	</div>
 
@@ -206,20 +200,16 @@
 				</div>
 			</div>
 	</div>
-			
 	
-	
-
 	<div class="box-kegiatan">
 			<div class="row">
 				<div class="col-md-4"><img src="images/kegiatanbabinsa.jpeg" alt="ketahanan pangan"></div>
 				<div class="col-md-8">
-					<h4>Ketahanan Pangan </h4>
+					<h4>Ketahanan Pangan</h4>
 					<p><b>Tanggal: 20 Maret 2026</b></p>
-					<p>Dalam rangka mendukung ketahanan pangan,babinsa koramil secanggang, Serka Lilik Susiadi melaksanakan kegiatan pendampingan dan pemantauan lahan persawaan milik warga
-						binaan di wilayah kecamatan secanggang, kabupatan langkat.</p>
+					<p>Dalam rangka mendukung ketahanan pangan, babinsa koramil secanggang, Serka Lilik Susiadi melaksanakan kegiatan pendampingan dan pemantauan lahan persawaan milik warga binaan di wilayah kecamatan secanggang, kabupatan langkat.</p>
+				</div>
 			</div>
-	</div>
 	</div>
 
 	<div class="box-kegiatan">
@@ -227,7 +217,7 @@
 				<div class="col-md-4"><img src="images/sertu hartoyo.jpeg" alt="pengecekan"></div>
 				<div class="col-md-8">
 					<h4>Kegiatan Hanpang</h4>
-					<p> Sertu Hartoyo melaksanakan kegiatan Hanpang pengecekan hama pada tanaman Kacang panjang milik Bapak Suparno Desa Perkotaan.</p>
+					<p>Sertu Hartoyo melaksanakan kegiatan Hanpang pengecekan hama pada tanaman Kacang panjang milik Bapak Suparno Desa Perkotaan.</p>
 				</div>
 			</div>
 	</div>
@@ -246,7 +236,7 @@
 				<div class="col-md-4"><img src="images/sertu samson.jpeg" alt="kegiatan komsos"></div>
 				<div class="col-md-8">
 					<h4>Kegiatan Komsos</h4>
-					<p> Sertu Samson Friono melaksanakan kegiatan komsos dengan bapak Amin pemilik ternak Kambing di Desa Suka Mulia</p>
+					<p>Sertu Samson Friono melaksanakan kegiatan komsos dengan bapak Amin pemilik ternak Kambing di Desa Suka Mulia</p>
 				</div>
 			</div>
 	</div>
@@ -255,15 +245,15 @@
 				<div class="col-md-4"><img src="images/serka lilik.jpeg" alt="menyalurkan bantuan"></div>
 				<div class="col-md-8">
 					<h4>Kegiatan Menyalurkan Bantuan</h4>
-					<p> Dalam rangka membantu masyarakat yang membutuhkan, Babinsa Koramil 08/Secanggang, serka Lilik Susiadi melaksanakan kegiatan pembagian beras kepada warga kurang mampu di wilayah binaan. Kegiatan ini diharapkan dapat meringankan beban masyarakat serta mempererat kemanunggalan TNI dengan rakyat.</p>
+					<p>Dalam rangka membantu masyarakat yang membutuhkan, Babinsa Koramil 08/Secanggang, serka Lilik Susiadi melaksanakan kegiatan pembagian beras kepada warga kurang mampu di wilayah binaan. Kegiatan ini diharapkan dapat meringankan beban masyarakat serta mempererat kemanunggalan TNI dengan rakyat.</p>
 				</div>
 			</div>
 	</div>
 	</div>
 
-
+	<!-- FOOTER UDAH DIBENERIN -->
 	<footer class="footer-pro">
-	<div class="container">
+	<div class="container-fluid"> <!-- INI YG DIGANTI -->
 		
 	<div class="row">
 			<div class="col-md-12">
@@ -294,7 +284,6 @@
 				<div class="sosmed">
 					<a href="https://www.facebook.com/share/191nqkvG29/?mibextid=wwXIfr" title="Facebook">f</a>
 					<a href="https://www.instagram.com/koramil_08secanggang?igsh=MTI4a2RkOGtsYmczcA==" title="Instagram">📷</a>
-					
 				</div>
 			</div>
 	</div>
@@ -307,6 +296,7 @@
 
 	</div>
 	</footer>
+
 <script src="bootstrap/js/jQuery.js"></script>
 <script src="bootstrap/js/bootstrap.min.js"></script>
 </body>
